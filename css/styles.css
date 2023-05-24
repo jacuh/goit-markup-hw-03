@@ -39,11 +39,13 @@ section {
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: row;
   border: 1px solid #ececec;
+  padding-block: 32px;
+}
+
+.header-childs {
+  display: flex;
+  align-items: center;
 }
 
 header .logo-web {
@@ -111,6 +113,8 @@ footer .logo-web {
 }
 
 .menu-nav {
+  display: inline;
+  margin-left: 93px;
 }
 
 .menu-nav li {
@@ -118,8 +122,14 @@ footer .logo-web {
   display: inline;
 }
 
+.menu-nav li:last-child {
+  margin-right: 0;
+}
+
 .email {
   color: #757575;
+  padding-right: 50px;
+  margin-left: 364px;
 }
 
 .tel {
@@ -156,10 +166,8 @@ footer .logo-web {
 }
 
 .what-we-doing {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
   padding-block: 0px;
+  text-align: center;
 }
 
 .what-we-doing h2 {
@@ -199,13 +207,14 @@ footer .logo-web {
 }
 
 .team ul {
-  margin-left: 185px;
+  display: flex;
   list-style-type: none;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .team li {
   margin-left: 30px;
-  display: inline-block;
   width: 270px;
   left: 215px;
   top: 1635px;
@@ -228,6 +237,7 @@ footer .logo-web {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  padding-block: 30px 10px;
 }
 
 .team h2 {
@@ -254,8 +264,6 @@ footer {
   box-sizing: border-box;
   padding-left: 215px;
   padding-block: 60px;
-  left: 0px;
-  top: 2097px;
   background: #2f303a;
 }
 
@@ -270,8 +278,15 @@ footer a {
 footer p {
   padding-top: 20px;
   font-size: 14px;
+  line-height: 24px;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolio-cards {
@@ -316,13 +331,14 @@ img {
 }
 
 .filters {
-  padding-left: 510px;
+  display: flex;
+  justify-content: space-between;
+  width: 572px;
   padding-bottom: 50px;
 }
 
 .filters button {
   height: 38px;
-  width: 121px;
   background: #f5f4fa;
   border-radius: 4px;
   font-weight: 500;
@@ -330,7 +346,7 @@ img {
   cursor: pointer;
   border-radius: 4px;
   border: none;
-  padding: 4px;
+  padding-inline: 22px;
 }
 
 .filters button:hover {
