@@ -63,6 +63,11 @@ header {
   padding-left: 0;
 }
 
+.header-left {
+  display: flex;
+  flex-direction: row;
+}
+
 header .logo-web {
   font-family: "Raleway";
   font-style: normal;
@@ -122,6 +127,7 @@ header .logo-web {
 
 .menu-nav {
   display: inline;
+  margin-left: 93px;
 }
 
 .menu-nav li {
