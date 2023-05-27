@@ -65,7 +65,7 @@ header {
 
 .header-left {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 
 header .logo-web {
@@ -222,7 +222,6 @@ header .logo-web {
 .team ul {
   display: flex;
   list-style-type: none;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -282,7 +281,6 @@ header .logo-web {
 .clients ul {
   list-style-type: none;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -340,7 +338,6 @@ footer {
 .join-us ul {
   list-style-type: none;
   display: flex;
-  flex-direction: row;
 }
 
 .join-us use {
